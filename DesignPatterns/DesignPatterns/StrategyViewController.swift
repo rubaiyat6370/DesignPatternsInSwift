@@ -8,13 +8,23 @@
 
 import UIKit
 
-class StrategyViewController: UIViewController {
+
+class StrategyViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "Stategy Pattern"
     }
 
-
+    @IBAction func redButtonPressed(_ sender: Any) {
+        RedColorStrategy(viewController: self).setBGColor()
+    }
+    @IBAction func blueButtonPressed(_ sender: Any) {
+        BlueColorStategy(viewController: self).setBGColor()
+    }
+    
+    @IBAction func orangeButtonPressed(_ sender: Any) {
+        OrangeColorStrategy(viewController: self).setBGColor()
+    }
 }
 

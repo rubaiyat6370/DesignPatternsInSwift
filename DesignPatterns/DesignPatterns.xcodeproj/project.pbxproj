@@ -13,6 +13,12 @@
 		BFCB22C923F1A639002A2E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCB22C723F1A639002A2E61 /* Main.storyboard */; };
 		BFCB22CB23F1A63B002A2E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCB22CA23F1A63B002A2E61 /* Assets.xcassets */; };
 		BFCB22CE23F1A63B002A2E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCB22CC23F1A63B002A2E61 /* LaunchScreen.storyboard */; };
+		BFCB22D623F1B132002A2E61 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22D523F1B132002A2E61 /* CustomButton.swift */; };
+		BFCB22D823F1E79B002A2E61 /* ColorStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22D723F1E79B002A2E61 /* ColorStrategyProtocol.swift */; };
+		BFCB22DA23F1E800002A2E61 /* RedColorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22D923F1E800002A2E61 /* RedColorStrategy.swift */; };
+		BFCB22DC23F1E942002A2E61 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22DB23F1E942002A2E61 /* BaseViewController.swift */; };
+		BFCB22DE23F1EADA002A2E61 /* BlueColorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22DD23F1EADA002A2E61 /* BlueColorStrategy.swift */; };
+		BFCB22E023F1EB21002A2E61 /* OrangeColorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22DF23F1EB21002A2E61 /* OrangeColorStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		BFCB22CA23F1A63B002A2E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFCB22CD23F1A63B002A2E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFCB22CF23F1A63B002A2E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCB22D523F1B132002A2E61 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		BFCB22D723F1E79B002A2E61 /* ColorStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStrategyProtocol.swift; sourceTree = "<group>"; };
+		BFCB22D923F1E800002A2E61 /* RedColorStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedColorStrategy.swift; sourceTree = "<group>"; };
+		BFCB22DB23F1E942002A2E61 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BFCB22DD23F1EADA002A2E61 /* BlueColorStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueColorStrategy.swift; sourceTree = "<group>"; };
+		BFCB22DF23F1EB21002A2E61 /* OrangeColorStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeColorStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		BFCB22C023F1A639002A2E61 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				BFCB22E123F1EBC0002A2E61 /* StrategyPattern */,
 				BFCB22C123F1A639002A2E61 /* AppDelegate.swift */,
 				BFCB22C323F1A639002A2E61 /* SceneDelegate.swift */,
 				BFCB22C523F1A639002A2E61 /* StrategyViewController.swift */,
@@ -63,8 +76,21 @@
 				BFCB22CA23F1A63B002A2E61 /* Assets.xcassets */,
 				BFCB22CC23F1A63B002A2E61 /* LaunchScreen.storyboard */,
 				BFCB22CF23F1A63B002A2E61 /* Info.plist */,
+				BFCB22D523F1B132002A2E61 /* CustomButton.swift */,
 			);
 			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		BFCB22E123F1EBC0002A2E61 /* StrategyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				BFCB22D723F1E79B002A2E61 /* ColorStrategyProtocol.swift */,
+				BFCB22D923F1E800002A2E61 /* RedColorStrategy.swift */,
+				BFCB22DB23F1E942002A2E61 /* BaseViewController.swift */,
+				BFCB22DD23F1EADA002A2E61 /* BlueColorStrategy.swift */,
+				BFCB22DF23F1EB21002A2E61 /* OrangeColorStrategy.swift */,
+			);
+			path = StrategyPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCB22DA23F1E800002A2E61 /* RedColorStrategy.swift in Sources */,
+				BFCB22D623F1B132002A2E61 /* CustomButton.swift in Sources */,
 				BFCB22C623F1A639002A2E61 /* StrategyViewController.swift in Sources */,
 				BFCB22C223F1A639002A2E61 /* AppDelegate.swift in Sources */,
+				BFCB22DE23F1EADA002A2E61 /* BlueColorStrategy.swift in Sources */,
+				BFCB22D823F1E79B002A2E61 /* ColorStrategyProtocol.swift in Sources */,
+				BFCB22DC23F1E942002A2E61 /* BaseViewController.swift in Sources */,
 				BFCB22C423F1A639002A2E61 /* SceneDelegate.swift in Sources */,
+				BFCB22E023F1EB21002A2E61 /* OrangeColorStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
