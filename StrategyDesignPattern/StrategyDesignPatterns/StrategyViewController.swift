@@ -13,18 +13,18 @@ class StrategyViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Stategy Pattern"
+        title = "Stategy Pattern Sample"
     }
 
     @IBAction func redButtonPressed(_ sender: Any) {
-        RedColorStrategy(viewController: self).setBGColor()
+        ColorStrategy(strategy: RedColorStrategy(viewController: self)).changeBG()
     }
     @IBAction func blueButtonPressed(_ sender: Any) {
-        BlueColorStategy(viewController: self).setBGColor()
+        ColorStrategy(strategy: BlueColorStategy(viewController: self)).changeBG()
     }
-    
+
     @IBAction func orangeButtonPressed(_ sender: Any) {
-        OrangeColorStrategy(viewController: self).setBGColor()
+        ColorStrategy(strategy: OrangeColorStrategy(viewController: self)).changeBG()
     }
 }
 

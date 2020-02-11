@@ -16,9 +16,10 @@
 		BFCB22D623F1B132002A2E61 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22D523F1B132002A2E61 /* CustomButton.swift */; };
 		BFCB22D823F1E79B002A2E61 /* ColorStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22D723F1E79B002A2E61 /* ColorStrategyProtocol.swift */; };
 		BFCB22DA23F1E800002A2E61 /* RedColorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22D923F1E800002A2E61 /* RedColorStrategy.swift */; };
-		BFCB22DC23F1E942002A2E61 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22DB23F1E942002A2E61 /* BaseViewController.swift */; };
 		BFCB22DE23F1EADA002A2E61 /* BlueColorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22DD23F1EADA002A2E61 /* BlueColorStrategy.swift */; };
 		BFCB22E023F1EB21002A2E61 /* OrangeColorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22DF23F1EB21002A2E61 /* OrangeColorStrategy.swift */; };
+		BFCB22ED23F2313E002A2E61 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22EC23F2313E002A2E61 /* BaseViewController.swift */; };
+		BFCB22EF23F2319C002A2E61 /* ColorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22EE23F2319C002A2E61 /* ColorStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,10 @@
 		BFCB22D523F1B132002A2E61 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BFCB22D723F1E79B002A2E61 /* ColorStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStrategyProtocol.swift; sourceTree = "<group>"; };
 		BFCB22D923F1E800002A2E61 /* RedColorStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedColorStrategy.swift; sourceTree = "<group>"; };
-		BFCB22DB23F1E942002A2E61 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BFCB22DD23F1EADA002A2E61 /* BlueColorStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueColorStrategy.swift; sourceTree = "<group>"; };
 		BFCB22DF23F1EB21002A2E61 /* OrangeColorStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeColorStrategy.swift; sourceTree = "<group>"; };
+		BFCB22EC23F2313E002A2E61 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BFCB22EE23F2319C002A2E61 /* ColorStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		BFCB22C023F1A639002A2E61 /* StrategyDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				BFCB22EC23F2313E002A2E61 /* BaseViewController.swift */,
 				BFCB22E123F1EBC0002A2E61 /* StrategyPattern */,
 				BFCB22C123F1A639002A2E61 /* AppDelegate.swift */,
 				BFCB22C323F1A639002A2E61 /* SceneDelegate.swift */,
@@ -86,9 +89,9 @@
 			children = (
 				BFCB22D723F1E79B002A2E61 /* ColorStrategyProtocol.swift */,
 				BFCB22D923F1E800002A2E61 /* RedColorStrategy.swift */,
-				BFCB22DB23F1E942002A2E61 /* BaseViewController.swift */,
 				BFCB22DD23F1EADA002A2E61 /* BlueColorStrategy.swift */,
 				BFCB22DF23F1EB21002A2E61 /* OrangeColorStrategy.swift */,
+				BFCB22EE23F2319C002A2E61 /* ColorStrategy.swift */,
 			);
 			path = StrategyPattern;
 			sourceTree = "<group>";
@@ -169,9 +172,10 @@
 				BFCB22C623F1A639002A2E61 /* StrategyViewController.swift in Sources */,
 				BFCB22C223F1A639002A2E61 /* AppDelegate.swift in Sources */,
 				BFCB22DE23F1EADA002A2E61 /* BlueColorStrategy.swift in Sources */,
+				BFCB22ED23F2313E002A2E61 /* BaseViewController.swift in Sources */,
 				BFCB22D823F1E79B002A2E61 /* ColorStrategyProtocol.swift in Sources */,
-				BFCB22DC23F1E942002A2E61 /* BaseViewController.swift in Sources */,
 				BFCB22C423F1A639002A2E61 /* SceneDelegate.swift in Sources */,
+				BFCB22EF23F2319C002A2E61 /* ColorStrategy.swift in Sources */,
 				BFCB22E023F1EB21002A2E61 /* OrangeColorStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
