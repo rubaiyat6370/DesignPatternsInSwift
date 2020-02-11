@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BFCB22BE23F1A639002A2E61 /* DesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCB22BE23F1A639002A2E61 /* StrategyDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrategyDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCB22C123F1A639002A2E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCB22C323F1A639002A2E61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BFCB22C523F1A639002A2E61 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		BFCB22B523F1A639002A2E61 = {
 			isa = PBXGroup;
 			children = (
-				BFCB22C023F1A639002A2E61 /* DesignPatterns */,
+				BFCB22C023F1A639002A2E61 /* StrategyDesignPatterns */,
 				BFCB22BF23F1A639002A2E61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,12 +60,12 @@
 		BFCB22BF23F1A639002A2E61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFCB22BE23F1A639002A2E61 /* DesignPatterns.app */,
+				BFCB22BE23F1A639002A2E61 /* StrategyDesignPatterns.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFCB22C023F1A639002A2E61 /* DesignPatterns */ = {
+		BFCB22C023F1A639002A2E61 /* StrategyDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
 				BFCB22E123F1EBC0002A2E61 /* StrategyPattern */,
@@ -78,7 +78,7 @@
 				BFCB22CF23F1A63B002A2E61 /* Info.plist */,
 				BFCB22D523F1B132002A2E61 /* CustomButton.swift */,
 			);
-			path = DesignPatterns;
+			path = StrategyDesignPatterns;
 			sourceTree = "<group>";
 		};
 		BFCB22E123F1EBC0002A2E61 /* StrategyPattern */ = {
@@ -96,9 +96,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFCB22BD23F1A639002A2E61 /* DesignPatterns */ = {
+		BFCB22BD23F1A639002A2E61 /* StrategyDesignPatterns */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFCB22D223F1A63B002A2E61 /* Build configuration list for PBXNativeTarget "DesignPatterns" */;
+			buildConfigurationList = BFCB22D223F1A63B002A2E61 /* Build configuration list for PBXNativeTarget "StrategyDesignPatterns" */;
 			buildPhases = (
 				BFCB22BA23F1A639002A2E61 /* Sources */,
 				BFCB22BB23F1A639002A2E61 /* Frameworks */,
@@ -108,9 +108,9 @@
 			);
 			dependencies = (
 			);
-			name = DesignPatterns;
+			name = StrategyDesignPatterns;
 			productName = DesignPatterns;
-			productReference = BFCB22BE23F1A639002A2E61 /* DesignPatterns.app */;
+			productReference = BFCB22BE23F1A639002A2E61 /* StrategyDesignPatterns.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BFCB22B923F1A639002A2E61 /* Build configuration list for PBXProject "DesignPatterns" */;
+			buildConfigurationList = BFCB22B923F1A639002A2E61 /* Build configuration list for PBXProject "StrategyDesignPatterns" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFCB22BD23F1A639002A2E61 /* DesignPatterns */,
+				BFCB22BD23F1A639002A2E61 /* StrategyDesignPatterns */,
 			);
 		};
 /* End PBXProject section */
@@ -317,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DesignPatterns/Info.plist;
+				INFOPLIST_FILE = StrategyDesignPatterns/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -335,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DesignPatterns/Info.plist;
+				INFOPLIST_FILE = StrategyDesignPatterns/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -351,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFCB22B923F1A639002A2E61 /* Build configuration list for PBXProject "DesignPatterns" */ = {
+		BFCB22B923F1A639002A2E61 /* Build configuration list for PBXProject "StrategyDesignPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFCB22D023F1A63B002A2E61 /* Debug */,
@@ -360,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFCB22D223F1A63B002A2E61 /* Build configuration list for PBXNativeTarget "DesignPatterns" */ = {
+		BFCB22D223F1A63B002A2E61 /* Build configuration list for PBXNativeTarget "StrategyDesignPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFCB22D323F1A63B002A2E61 /* Debug */,
