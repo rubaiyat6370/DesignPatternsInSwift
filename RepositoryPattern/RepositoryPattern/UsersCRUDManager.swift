@@ -16,10 +16,24 @@ class UserCRUDManger {
         self.DB = DB
     }
 
-    func createUser( name: String, city: String?, country: String) -> Bool {
+    func createUser( name: String, city: String?, country: String, bio: String?, gender: String, image: String?) -> Bool {
         let user = UserProfile()
         user.name = name
+        user.bio = bio ?? ""
+        user.gender = gender
+
+        if image != nil {
+            user.image = image
+        } else {
+            if gender.caseInsensitiveCompare("female") == .orderedSame {
+                user.image = "girlIcon"
+            } else {
+                user.image = "boyIcon"
+            }
+        }
+
         user.address = createAddress(city: city, country: country)
+        user.address?.uuid = user.uuid
         return insert(user: user)
     }
 
@@ -46,10 +60,14 @@ class UserCRUDManger {
         return DB.delete(object: user)
     }
 
-    func update(user: UserProfile, name: String? = nil, city: String? = nil, country: String? = nil) -> Bool {
+    func update(user: UserProfile, name: String? = nil, city: String? = nil, country: String? = nil, bio: String? = nil, image: String? = nil, gender: String? = nil) -> Bool {
         let updatedUser = UserProfile()
         updatedUser.name = user.name
         updatedUser.uuid = user.uuid
+        updatedUser.bio = user.bio
+        updatedUser.gender = user.gender
+        updatedUser.image = user.image
+        
         let newAdd = Address()
         newAdd.city = user.address?.city
         newAdd.country = user.address?.country ?? ""
@@ -65,6 +83,24 @@ class UserCRUDManger {
 
         if country != nil {
             updatedUser.address?.country = country!
+        }
+
+        if gender != nil {
+            updatedUser.gender = gender!
+        }
+
+        if bio != nil {
+            updatedUser.bio = bio!
+        }
+
+        if image != nil {
+            updatedUser.image = image
+        } else {
+            if updatedUser.gender.caseInsensitiveCompare("female") == .orderedSame {
+                updatedUser.image = "girlIcon"
+            } else {
+                updatedUser.image = "boyIcon"
+            }
         }
         
         let predicate: NSPredicate = NSPredicate(format: "uuid == %@", user.uuid)

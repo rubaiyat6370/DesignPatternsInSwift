@@ -15,9 +15,10 @@ class RealmObject: Object {
 
 class UserProfile: RealmObject {
     @objc dynamic var name = ""
-    //@objc dynamic var bio = ""
-    //@objc dynamic var image: String?
+    @objc dynamic var bio = ""
+    @objc dynamic var image: String? = ""
     //@objc dynamic var id = 0
+    @objc dynamic var gender: String = ""
     @objc dynamic var address: Address?
 
 //    override static func primaryKey() -> String? {
