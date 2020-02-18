@@ -16,6 +16,9 @@
 		BF5FBACD23F383A2004FC776 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5FBACC23F383A2004FC776 /* Address.swift */; };
 		BF5FBAD523F60356004FC776 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5FBAD323F60356004FC776 /* ProfileTableViewCell.swift */; };
 		BF5FBAD623F60356004FC776 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5FBAD423F60356004FC776 /* ProfileTableViewCell.xib */; };
+		BF7E90FE23FC4C870024968A /* RepositoryPattern.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF7E90FC23FC4C870024968A /* RepositoryPattern.xcdatamodeld */; };
+		BF7E910023FC66A00024968A /* CoraDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E90FF23FC66A00024968A /* CoraDataManager.swift */; };
+		BF7E910323FC6C730024968A /* CoreDataDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E910223FC6C730024968A /* CoreDataDB.swift */; };
 		BFCB22FD23F23395002A2E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB22FC23F23395002A2E61 /* AppDelegate.swift */; };
 		BFCB230623F23397002A2E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCB230523F23397002A2E61 /* Assets.xcassets */; };
 		BFCB230923F23397002A2E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCB230723F23397002A2E61 /* LaunchScreen.storyboard */; };
@@ -34,6 +37,9 @@
 		BF5FBACC23F383A2004FC776 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		BF5FBAD323F60356004FC776 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		BF5FBAD423F60356004FC776 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		BF7E90FD23FC4C870024968A /* RepositoryPattern.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RepositoryPattern.xcdatamodel; sourceTree = "<group>"; };
+		BF7E90FF23FC66A00024968A /* CoraDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoraDataManager.swift; sourceTree = "<group>"; };
+		BF7E910223FC6C730024968A /* CoreDataDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDB.swift; sourceTree = "<group>"; };
 		BFCB22F923F23395002A2E61 /* RepositoryPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepositoryPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCB22FC23F23395002A2E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFCB230523F23397002A2E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +78,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		BF7E910123FC6C3A0024968A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E90FC23FC4C870024968A /* RepositoryPattern.xcdatamodeld */,
+				BF7E90FF23FC66A00024968A /* CoraDataManager.swift */,
+				BF7E910223FC6C730024968A /* CoreDataDB.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		BFCB22F023F23395002A2E61 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +109,7 @@
 		BFCB22FB23F23395002A2E61 /* RepositoryPattern */ = {
 			isa = PBXGroup;
 			children = (
+				BF7E910123FC6C3A0024968A /* CoreData */,
 				BF5FBAC523F34570004FC776 /* Models */,
 				BFCB22FC23F23395002A2E61 /* AppDelegate.swift */,
 				BFCB230523F23397002A2E61 /* Assets.xcassets */,
@@ -236,10 +253,13 @@
 				BF5FBAC023F34371004FC776 /* RealmDB.swift in Sources */,
 				BF5FBAD523F60356004FC776 /* ProfileTableViewCell.swift in Sources */,
 				BFCB22FD23F23395002A2E61 /* AppDelegate.swift in Sources */,
+				BF7E910323FC6C730024968A /* CoreDataDB.swift in Sources */,
 				BF5FBAC923F34C91004FC776 /* UsersCRUDManager.swift in Sources */,
+				BF7E90FE23FC4C870024968A /* RepositoryPattern.xcdatamodeld in Sources */,
 				BF5FBAC723F3464A004FC776 /* UserProfile.swift in Sources */,
 				BF5FBABC23F2398D004FC776 /* RepositoryProtocol.swift in Sources */,
 				BF5FBAC323F343DD004FC776 /* MainViewController.swift in Sources */,
+				BF7E910023FC66A00024968A /* CoraDataManager.swift in Sources */,
 				BF5FBACD23F383A2004FC776 /* Address.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +450,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF7E90FC23FC4C870024968A /* RepositoryPattern.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF7E90FD23FC4C870024968A /* RepositoryPattern.xcdatamodel */,
+			);
+			currentVersion = BF7E90FD23FC4C870024968A /* RepositoryPattern.xcdatamodel */;
+			path = RepositoryPattern.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BFCB22F123F23395002A2E61 /* Project object */;
 }
